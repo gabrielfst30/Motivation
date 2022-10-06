@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#0CA0DC">
+
+        <View
+            android:id="@+id/linha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="45dp"
+            android:src="@drawable/ic_baseline_all_inclusive_24"
+            app:tint="#0A719A" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_outline_insert_emoticon_24"
+            app:tint="#0A719A" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="45dp"
+            android:src="@drawable/ic_baseline_light_mode_24"
+            app:tint="#0A719A" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ola_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/actor"
+        android:text="@string/text_ola"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/frase"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/actor"
+        android:gravity="center"
+        android:text="@string/text_mtv"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="20sp" />
+
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="2.5dp"
+        android:layout_below="@id/frase"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:background="#0CA0DC"
+        android:elevation="3dp" />
+
+
+    <Button
+        android:id="@+id/btn_frase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="208dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#0CA0DC"
+        android:elevation="10dp"
+        android:fontFamily="@font/actor"
+        android:text="nova frase"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
