@@ -2,4 +2,8 @@
     <string name="app_name">Motivation</string>
     <string name="text_ola">Olá, Kotlin!</string>
     <string name="text_mtv">Riscos devem ser corridos, porque o maior perigo é não arriscar nada</string>
+    <string name="qual_seu_nome">Qual seu nome?</string>
+    <string name="salvar">SALVAR</string>
+    <string name="vamos_come_ar">Vamos começar?</string>
+    <string name="validation_mandatory_name">Digite seu nome para prosseguir!</string>
 </resources>
