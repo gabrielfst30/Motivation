@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul"
+    tools:context=".UserActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:elevation="10dp"
+        android:fontFamily="@font/actor"
+        android:padding="60dp"
+        android:text="@string/vamos_come_ar"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/actor"
+            android:textColor="@color/white"
+            android:hint="@string/qual_seu_nome"
+            android:textAlignment="center"
+            android:textColorHint="#B9FFFFFF"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="110dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="70dp"
+            android:backgroundTint="@color/white"
+            android:elevation="10dp"
+            android:fontFamily="@font/actor"
+            android:text="@string/salvar"
+            android:textColor="@color/azul"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
