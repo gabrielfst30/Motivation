@@ -8,4 +8,10 @@ class MotivationConstants private constructor(){//private constructor para não 
 
     }
 
+    object FILTER{
+        const val ALL = 1
+        const val HAPPY = 2
+        const val SUNNY = 3
+    }
+
 }
