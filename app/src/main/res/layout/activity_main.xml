@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -24,16 +23,14 @@
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
             android:layout_marginStart="45dp"
-            android:src="@drawable/ic_baseline_all_inclusive_24"
-            app:tint="#0A719A" />
+            android:src="@drawable/ic_baseline_all_inclusive_24" />
 
         <ImageView
             android:id="@+id/image_happy"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_centerInParent="true"
-            android:src="@drawable/ic_outline_insert_emoticon_24"
-            app:tint="#0A719A" />
+            android:src="@drawable/ic_outline_insert_emoticon_24" />
 
         <ImageView
             android:id="@+id/image_sunny"
@@ -42,8 +39,7 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginEnd="45dp"
-            android:src="@drawable/ic_baseline_light_mode_24"
-            app:tint="#0A719A" />
+            android:src="@drawable/ic_baseline_light_mode_24" />
 
     </RelativeLayout>
 
