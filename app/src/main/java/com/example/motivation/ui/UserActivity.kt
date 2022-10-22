@@ -25,18 +25,18 @@ class UserActivity : AppCompatActivity(), View.OnClickListener {
 
         binding.buttonSave.setOnClickListener(this)
 
-        verifyUserName()
+//        verifyUserName()
 
     }
     //VERIFICANDO SE O NOME DO USUÁRIO JA FOI DEFINIDO
-    private fun verifyUserName() {
-        val name = SecurityPrefences(this).getString(MotivationConstants.KEY.USER_NAME)
-        if(name != ""){
-            startActivity(Intent(this, MainActivity::class.java))
-            finish()
-        }
-
-    }
+//    private fun verifyUserName() {
+//        val name = SecurityPrefences(this).getString(MotivationConstants.KEY.USER_NAME)
+//        if(name != ""){
+//            startActivity(Intent(this, MainActivity::class.java))
+//            finish()
+//        }
+//
+//    }
 
 
     override fun onClick(v: View) {
