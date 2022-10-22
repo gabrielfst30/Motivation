@@ -106,8 +106,13 @@ class MainActivity : AppCompatActivity(), OnClickListener {
     //pegando o name que foi salvo na UserActivity
     private fun handleUserName() {
         val name = SecurityPrefences(this).getString(MotivationConstants.KEY.USER_NAME)
-        binding.textUserName.text = "Olá, $name!"
 
+        //validação caso ainda não tenha nome escolhido
+        if (name == "") {
+            binding.textUserName.text = "Qual seu nome? clica aqui!"
+        } else {
+            binding.textUserName.text = "Olá, $name!"
+
+        }
     }
-
 }
