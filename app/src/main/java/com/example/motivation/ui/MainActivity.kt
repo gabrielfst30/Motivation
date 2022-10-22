@@ -1,5 +1,6 @@
 package com.example.motivation.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.View.OnClickListener
@@ -25,7 +26,6 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         supportActionBar?.hide()
 
         //instanciando a Function
-        handleUserName() //busca o user name
         handleFilter(R.id.image_all) // começa o app aberto no all
         handleNextPhrase() //iniciando o app com uma frase qnd o app carrega a primeira vez
 
@@ -34,7 +34,31 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         binding.imageAll.setOnClickListener(this)
         binding.imageHappy.setOnClickListener(this)
         binding.imageSunny.setOnClickListener(this)
+        binding.textUserName.setOnClickListener(this)
     }
+
+        override fun onStart() {
+            super.onStart()
+        }
+
+        //assim que o app voltar a tela MainActivity, ele atualizará o nome automaticamente
+        override fun onResume() {
+            super.onResume()
+            handleUserName() //busca o user name
+
+        }
+
+        override fun onPause() {
+            super.onPause()
+        }
+
+        override fun onStop() {
+            super.onStop()
+        }
+
+        override fun onDestroy() {
+            super.onDestroy()
+        }
 
     //Wifi de onclick :)
     override fun onClick(view: View) {
@@ -44,6 +68,9 @@ class MainActivity : AppCompatActivity(), OnClickListener {
             //listando os botões que serão clicados e chamando a função que muda de cor
         } else if (view.id in listOf(R.id.image_all, R.id.image_happy, R.id.image_sunny)) {
             handleFilter(view.id)//passando id do elemento que foi clicado
+        } else if(view.id == R.id.text_user_name){
+            startActivity(Intent(this, UserActivity::class.java))
+
         }
     }
 
@@ -75,7 +102,6 @@ class MainActivity : AppCompatActivity(), OnClickListener {
             }
         }
     }
-
 
     //pegando o name que foi salvo na UserActivity
     private fun handleUserName() {
