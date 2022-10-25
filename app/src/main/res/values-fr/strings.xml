@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">La motivation</string>
+    <string name="text_ola">Bonjour, Kotlin!</string>
+    <string name="text_mtv">Il faut prendre des risques, car le plus grand danger est de ne rien risquer.</string>
+    <string name="qual_seu_nome">Quel est votre nom?</string>
+    <string name="salvar">Sauver</string>
+    <string name="vamos_come_ar">Commencer</string>
+    <string name="validation_mandatory_name">Entrez votre nom.</string>
+</resources>
