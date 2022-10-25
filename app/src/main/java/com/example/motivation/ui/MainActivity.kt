@@ -11,6 +11,7 @@ import com.example.motivation.data.Mock
 import com.example.motivation.databinding.ActivityMainBinding
 import com.example.motivation.infra.MotivationConstants
 import com.example.motivation.infra.SecurityPrefences
+import java.util.Locale
 
 class MainActivity : AppCompatActivity(), OnClickListener {
 
@@ -74,8 +75,8 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         }
     }
 
-    private fun handleNextPhrase(){
-       val phrase = Mock().getPhrase(categoryId) //instaciando a classe e a categoria
+    private fun handleNextPhrase(){             //pegando idioma local
+        val phrase = Mock().getPhrase(categoryId, Locale.getDefault().language) //instaciando a classe e a categoria
         binding.frase.text = phrase //clicando no botão e fazendo a frase aparecer
     }
 
