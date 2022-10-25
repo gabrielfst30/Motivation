@@ -14,4 +14,10 @@ class MotivationConstants private constructor(){//private constructor para não 
         const val SUNNY = 3
     }
 
+    object LANGUAGE{
+        const val PORTUGUESE = "pt"
+        const val ENGLISH = "en"
+        const val FRENCH = "fr"
+    }
+
 }
